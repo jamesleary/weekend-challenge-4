@@ -24,7 +24,7 @@ Use arrays and objects to store your data.
 
 Task List
 [x] Add 6 images to img folder to be accessed locally
-[] Source in Angular, Create a basic HTML layout and spin up client side module
+[] Source in Angular and Bootsrap, Create a basic HTML layout and spin up client side module
 [] Using angular add all images and size them to be the same size.
 [] Add functionality when we click the picture to show a brief synopsis about the photos
 [] Add a like button underneath the photos
@@ -36,6 +36,7 @@ Task List
 [] Create a button named Show comments
 [] Make button toggle to hide and show comments when button is clicked
 [] Host site on Heroku
+
 Additional Tasks
 
 Add Bootstrap to style your gallery and make it responsive. Include a view counter to keep track of how many times a specific image was clicked on.
