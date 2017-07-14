@@ -23,7 +23,7 @@ Explore built-in Angular functionality like ng-click, ng-src, ng-show, ng-hide, 
 Use arrays and objects to store your data.
 
 Task List
-[] Add 6 images to img folder to be accessed locally
+[x] Add 6 images to img folder to be accessed locally
 [] Source in Angular, Create a basic HTML layout and spin up client side module
 [] Using angular add all images and size them to be the same size.
 [] Add functionality when we click the picture to show a brief synopsis about the photos
