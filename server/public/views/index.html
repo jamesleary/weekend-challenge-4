@@ -14,10 +14,12 @@
   <div ng-controller="MyGallery">
 
     <div ng-repeat="image in pictures">
-      <img ng-src ="{{image.src}}">
-
+      <div  ng-click="toggle(image)">
+            <img ng-src ="{{image.src}}"
+                 ng-show="image.visible">
+            <p ng-hide="image.visible">{{image.message}}</p>
     </div>
-
   </div>
+</div>
 </body>
 </html>
