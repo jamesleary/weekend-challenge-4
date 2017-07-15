@@ -24,8 +24,8 @@ Use arrays and objects to store your data.
 
 Task List
 [x] Add 6 images to img folder to be accessed locally
-[] Source in Angular and Bootsrap, Create a basic HTML layout and spin up client side module
-[] Using angular add all images and size them to be the same size.
+[x] Source in Angular and Bootsrap, Create a basic HTML layout and spin up client side module
+[x] Using angular add all images and size them to be the same size.
 [] Add functionality when we click the picture to show a brief synopsis about the photos
 [] Add a like button underneath the photos
 [] Keep track of number of likes, add a counter
