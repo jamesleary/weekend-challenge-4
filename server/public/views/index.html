@@ -17,7 +17,7 @@
   <div ng-controller="MyGallery" >
 
     <div ng-repeat="image in pictures"class="col-md-4">
-      <div ng-click="toggleImage(image)">
+      <div class="pictureSize"ng-click="toggleImage(image)">
         <img ng-src ="{{image.src}}"
              ng-show="image.visible"
              class="img-fluid" alt="Responsive image">
@@ -29,10 +29,11 @@
       <button class="btn-primary"ng-click="showComments(image)">Show Comments</button>
       <p class="comment">Total Likes {{image.myLikes}},
          Total Views {{image.views}}</p>
-      <div ng-repeat= "comments in image.comments track by $index">
+         <div class="commentArea">
+         <div ng-repeat= "comments in image.comments track by $index">
         <p class="comment"ng-hide="image.commentVisible">{{comments}}</p>
-
       </div>
+       </div>
     </div>
   </div>
 </body>

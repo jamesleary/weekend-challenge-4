@@ -1,15 +1,21 @@
 
-.container {
-  background:url("http://4.bp.blogspot.com/-7ACh0H407Ks/UqT2ljFXuuI/AAAAAAAAw_c/3zhuqIWxeD4/s1600/sky1.jpg");
-}
+
 img {
   width: 300px;
   height: 300px;
-  display: block;
+  display: inline-block;
+  position:static;
+
+}
+.pictureSize{
+  height: 350px;
+  width: 350px;
 }
 
 .page-header{
   text-align: center;
+    color: white;
+    font-size: 60px;
 }
 
 input {
@@ -18,9 +24,33 @@ font-family: 'Open Sans Condensed', sans-serif;
 
 .comment {
   font-family: 'Open Sans Condensed', sans-serif;
+
 }
 
 p {
   color: white;
   font-size: 20px;
+}
+
+.commentArea {
+  height: 250px;
+  width: 300px;
+  overflow: scroll;
+}
+::-webkit-scrollbar {
+  height: 0px;
+  width: 0px;
+}
+
+body {
+
+
+background: rgba(183,222,237,1);
+background: -moz-linear-gradient(left, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 34%, rgba(71,192,232,1) 47%, rgba(33,180,226,1) 59%, rgba(140,224,255,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(183,222,237,1)), color-stop(34%, rgba(113,206,239,1)), color-stop(47%, rgba(71,192,232,1)), color-stop(59%, rgba(33,180,226,1)), color-stop(100%, rgba(140,224,255,1)));
+background: -webkit-linear-gradient(left, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 34%, rgba(71,192,232,1) 47%, rgba(33,180,226,1) 59%, rgba(140,224,255,1) 100%);
+background: -o-linear-gradient(left, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 34%, rgba(71,192,232,1) 47%, rgba(33,180,226,1) 59%, rgba(140,224,255,1) 100%);
+background: -ms-linear-gradient(left, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 34%, rgba(71,192,232,1) 47%, rgba(33,180,226,1) 59%, rgba(140,224,255,1) 100%);
+background: linear-gradient(to right, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 34%, rgba(71,192,232,1) 47%, rgba(33,180,226,1) 59%, rgba(140,224,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', endColorstr='#8ce0ff', GradientType=1 );
 }
