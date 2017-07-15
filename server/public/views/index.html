@@ -16,7 +16,7 @@
   <h1 class="page-header">My Life</h1>
   <div ng-controller="MyGallery" >
 
-    <div ng-repeat="image in pictures"class="col-md-4">
+    <div ng-repeat="image in pictures"class="col-md-4 col-xs-12">
       <div class="pictureSize"ng-click="toggleImage(image)">
         <img ng-src ="{{image.src}}"
              ng-show="image.visible"
