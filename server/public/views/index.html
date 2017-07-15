@@ -18,7 +18,11 @@
             <img ng-src ="{{image.src}}"
                  ng-show="image.visible">
             <p ng-hide="image.visible">{{image.message}}</p>
+
     </div>
+    <button ng-click="like(image)">Like</button>
+      <p>{{image.myLikes}}</p>
+    <button >Comment</button>
   </div>
 </div>
 </body>

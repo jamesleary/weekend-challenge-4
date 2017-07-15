@@ -27,10 +27,10 @@ Task List
 [x] Source in Angular and Bootsrap, Create a basic HTML layout and spin up client side module
 [x] Using angular add all images and size them to be the same size.
 [x] Add functionality when we click the picture to show a brief synopsis about the photos
-[] Add a like button underneath the photos
-[] Keep track of number of likes, add a counter
-[] Add Boostrap Styling to make gallery responsive
+[x] Add a like button underneath the photos
+[x] Keep track of number of likes, add a counter
 [] Add a view counter that keeps track how many times picture has been clicked on
+[] Add Boostrap Styling to make gallery responsive
 [] Create a form underneath each photo
 [] add functionality to make comments for each photo
 [] Create a button named Show comments
