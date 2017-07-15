@@ -14,6 +14,7 @@
   <div ng-controller="MyGallery">
 
     <div ng-repeat="image in pictures">
+
       <div  ng-click="toggle(image)">
             <img ng-src ="{{image.src}}"
                  ng-show="image.visible">
@@ -21,7 +22,7 @@
 
     </div>
     <button ng-click="like(image)">Like</button>
-      <p>{{image.myLikes}}</p>
+      <p>Total Likes {{image.myLikes}}, Total Views {{image.views}}</p>
     <button >Comment</button>
   </div>
 </div>
