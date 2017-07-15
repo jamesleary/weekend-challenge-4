@@ -32,9 +32,10 @@ Task List
 [x] Add a view counter that keeps track how many times picture has been clicked on
 [x] Create a form underneath each photo
 [x] Add functionality to make comments for each photo
-[] Create a button named Show comments
-[] Make button toggle to hide and show comments when button is clicked
-[] Add Bootstrap Styling to make gallery responsive
+[x] Create a button named Show comments
+[x] Make button toggle to hide and show comments when button is clicked
+[x] Add Bootstrap Styling
+[x] Make gallery responsive
 [] Host site on Heroku
 
 Additional Tasks

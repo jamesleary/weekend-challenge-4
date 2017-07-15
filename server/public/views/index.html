@@ -3,31 +3,34 @@
 <head>
   <meta charset="utf-8">
   <title>Weekend Challenge Gallery of My Life</title>
-  <!-- <link rel="stylesheet" href="../vendors/bootstrap-theme.css">
-  <link rel="stylesheet" href="../vendors/bootstrap.css"> -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap-theme.css">
+  <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.css">
   <script type="text/javascript"src="../vendors/angular.js"></script>
+  <script type="text/javascript" src="scripts/data.js"></script>
   <script type="text/javascript"src="scripts/client.js"></script>
+
   <link rel="stylesheet" href="views/main.css">
 </head>
 <body ng-app="myApp"class="container">
-  <h1>My Life</h1>
-  <div ng-controller="MyGallery">
+  <h1 class="page-header">My Life</h1>
+  <div ng-controller="MyGallery" >
 
-    <div ng-repeat="image in pictures">
-
-      <div  ng-click="toggleImage(image)">
+    <div ng-repeat="image in pictures"class="col-md-4">
+      <div ng-click="toggleImage(image)">
         <img ng-src ="{{image.src}}"
-        ng-show="image.visible">
+             ng-show="image.visible"
+             class="img-fluid" alt="Responsive image">
         <p ng-hide="image.visible">{{image.message}}</p>
       </div>
-      <button ng-click="like(image)">Like</button>
+      <button class="btn-success" ng-click="like(image)">Like</button>
       <input type="text" ng-model="comment" placeholder="Add Comment Here">
-      <button ng-click="addComment(image, comment)">Comment</button>
-      <button ng-click="showComments(image)">Show Comments</button>
-      <p>Total Likes {{image.myLikes}}, Total Views {{image.views}}</p>
-
-      <div ng-repeat= "comments in image.comments">
-        <p ng-hide="image.commentVisible">{{comments}}</p>
+      <button class="btn-info"ng-click="addComment(image, comment)">Comment</button>
+      <button class="btn-primary"ng-click="showComments(image)">Show Comments</button>
+      <p class="comment">Total Likes {{image.myLikes}},
+         Total Views {{image.views}}</p>
+      <div ng-repeat= "comments in image.comments track by $index">
+        <p class="comment"ng-hide="image.commentVisible">{{comments}}</p>
 
       </div>
     </div>

@@ -1,8 +1,26 @@
-h1 {
-align-content: center;
+
+.container {
+  background:url("http://4.bp.blogspot.com/-7ACh0H407Ks/UqT2ljFXuuI/AAAAAAAAw_c/3zhuqIWxeD4/s1600/sky1.jpg");
 }
 img {
   width: 300px;
   height: 300px;
   display: block;
+}
+
+.page-header{
+  text-align: center;
+}
+
+input {
+font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.comment {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+p {
+  color: white;
+  font-size: 20px;
 }
