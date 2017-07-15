@@ -15,7 +15,7 @@
 
     <div ng-repeat="image in pictures">
 
-      <div  ng-click="toggle(image)">
+      <div  ng-click="toggleImage(image)">
         <img ng-src ="{{image.src}}"
         ng-show="image.visible">
         <p ng-hide="image.visible">{{image.message}}</p>
@@ -23,10 +23,11 @@
       <button ng-click="like(image)">Like</button>
       <input type="text" ng-model="comment" placeholder="Add Comment Here">
       <button ng-click="addComment(image, comment)">Comment</button>
+      <button ng-click="showComments(image)">Show Comments</button>
       <p>Total Likes {{image.myLikes}}, Total Views {{image.views}}</p>
 
       <div ng-repeat= "comments in image.comments">
-        <p>{{comments}}</p>
+        <p ng-hide="image.commentVisible">{{comments}}</p>
 
       </div>
     </div>

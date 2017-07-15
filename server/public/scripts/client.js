@@ -10,7 +10,8 @@ myApp.controller('MyGallery',function($scope){
       visible: true,
       myLikes:  0,
       views: 1,
-      comments: []
+      comments: [],
+      commentVisible: true
     },
     {
       src:"../img/greatest_pic_bros.jpg",
@@ -54,7 +55,7 @@ myApp.controller('MyGallery',function($scope){
     }
 
   ];
-  $scope.toggle = function(picture){
+  $scope.toggleImage = function(picture){
       console.log('click');
 
       picture.visible = !picture.visible;
@@ -62,6 +63,12 @@ myApp.controller('MyGallery',function($scope){
         picture.views += 1;
       }
     };
+    $scope.showComments = function(picture){
+        console.log('Show Comment click');
+
+        picture.commentVisible = !picture.commentVisible;
+
+      };
     $scope.like = function (image){
       console.log('like click');
       image.myLikes += 1;
