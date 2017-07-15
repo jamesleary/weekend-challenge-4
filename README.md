@@ -30,8 +30,8 @@ Task List
 [x] Add a like button underneath the photos
 [x] Keep track of number of likes, add a counter
 [x] Add a view counter that keeps track how many times picture has been clicked on
-[] Create a form underneath each photo
-[] Add functionality to make comments for each photo
+[x] Create a form underneath each photo
+[x] Add functionality to make comments for each photo
 [] Create a button named Show comments
 [] Make button toggle to hide and show comments when button is clicked
 [] Add Bootstrap Styling to make gallery responsive
