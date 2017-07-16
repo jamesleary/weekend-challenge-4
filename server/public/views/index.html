@@ -14,6 +14,7 @@
 </head>
 <body ng-app="myApp"class="container">
   <h1 class="page-header">My Life</h1>
+  <h2 class="page-subHeader">The James Leary version not Michael Keaton</h2>
   <div ng-controller="MyGallery" >
 
     <div ng-repeat="image in pictures"class="col-md-4 col-xs-12">
@@ -23,12 +24,15 @@
              class="img-fluid" alt="Responsive image">
         <p ng-hide="image.visible">{{image.message}}</p>
       </div>
+      <div id="centerShow">
       <button class="btn-success" ng-click="like(image)">Like</button>
       <input type="text" ng-model="comment" placeholder="Add Comment Here">
       <button class="btn-info"ng-click="addComment(image, comment)">Comment</button>
       <button class="btn-primary"ng-click="showComments(image)">Show Comments</button>
+      </div>
       <p class="comment">Total Likes {{image.myLikes}},
          Total Views {{image.views}}</p>
+
          <div class="commentArea">
          <div ng-repeat= "comments in image.comments track by $index">
         <p class="comment"ng-hide="image.commentVisible">{{comments}}</p>
@@ -37,4 +41,5 @@
     </div>
   </div>
 </body>
+<footer>Created by James P. Leary III</footer>
 </html>

@@ -5,7 +5,7 @@ img {
   height: 300px;
   display: inline-block;
   position:static;
-
+  border-radius: 5%;
 }
 .pictureSize{
   height: 350px;
@@ -16,6 +16,11 @@ img {
   text-align: center;
     color: white;
     font-size: 60px;
+}
+.page-subHeader{
+  text-align: center;
+    color: white;
+    font-size: 30px;
 }
 
 input {
@@ -53,4 +58,8 @@ background: -o-linear-gradient(left, rgba(183,222,237,1) 0%, rgba(113,206,239,1)
 background: -ms-linear-gradient(left, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 34%, rgba(71,192,232,1) 47%, rgba(33,180,226,1) 59%, rgba(140,224,255,1) 100%);
 background: linear-gradient(to right, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 34%, rgba(71,192,232,1) 47%, rgba(33,180,226,1) 59%, rgba(140,224,255,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', endColorstr='#8ce0ff', GradientType=1 );
+}
+
+footer {
+  text-align: center;
 }

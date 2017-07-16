@@ -36,10 +36,4 @@ Task List
 [x] Make button toggle to hide and show comments when button is clicked
 [x] Add Bootstrap Styling
 [x] Make gallery responsive
-[] Host site on Heroku
-
-Additional Tasks
-
-Add Bootstrap to style your gallery and make it responsive. Include a view counter to keep track of how many times a specific image was clicked on.
-
-Create a form that will take comments for each of your photos. Display the comments when a "Show Comments" button is clicked.
+[x] Host site on Heroku
