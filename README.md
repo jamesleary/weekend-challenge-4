@@ -1,17 +1,16 @@
-# weekend-challenge-4
+# Gallery Weekend Challenge
 The Gallery of My Life
 
 This weekend's application will be a gallery of 6 or more pictures of significance to you. When someone clicks on a picture, they should see a brief synopsis of why you chose to display that photo. Users can also heart/thumbs up/favorite your photo as many times as they want; you'll need to keep track of how many times it was clicked.
 
-When you're done, host this on Heroku!
 
-Technologies
+## Technologies
 
-Node/Express - to serve your files
-Angular - client-side logic
-CSS - flex your style muscles
-Heroku - to make your site available to the world
-Wireframes
+* Node/Express 
+* Angular 
+* CSS 
+* Heroku 
+* Wireframes
 
 Gallery - Initial Page Load
 
